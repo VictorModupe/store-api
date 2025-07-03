@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MDTC Prop Challenge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:hero */
+.hero-section {
+    background-color: var(--color-background);
+    padding-top: 12px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 691px;
+    box-sizing: border-box;
+}
+
+.hero-bg-blur {
+    position: absolute;
+    width: 1024px;
+    height: 960px;
+    left: 50%;
+    top: -40px;
+    transform: translateX(-30%) rotate(35deg);
+    background: linear-gradient(180deg, #10490a 0%, #10490a 100%);
+    filter: blur(200px);
+    opacity: 0.9;
+    z-index: 0;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 124px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 42px;
+    height: 41.25px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 21.5px;
+}
+
+.main-nav a {
+    color: var(--color-text-light);
+    font-size: 19.34px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--color-primary);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+}
+
+.prop-challenge-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7.5px;
+    padding: 7.5px 10.7px;
+    background: linear-gradient(159deg, #10490a 0%, rgba(38, 175, 24, 0) 129.81%);
+    border-radius: 8.6px;
+    color: var(--color-text-light);
+    font-size: 17.2px;
+}
+
+.avatar-group {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 23.5px;
+    height: 23.5px;
+    border-radius: 50%;
+    border: 1.6px solid #22a02a;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.avatar:not(:first-child) {
+    margin-left: -10px;
+}
+.avatar-placeholder {
+    background-color: transparent;
+}
+
+.hero-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.4;
+    color: var(--color-text-light);
+    max-width: 1010px;
+}
+
+.hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: var(--color-text-light-secondary);
+    line-height: 28px;
+}
+
+.start-challenge-btn {
+    margin-top: 16px;
+}
+
+@media (max-width: 992px) {
+    .main-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .hero-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 32px;
+    }
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+}
+
+/* CSS for section section:features */
+.features-section {
+    padding: 50px 0;
+    background-color: var(--color-background);
+}
+
+.features-bg-blur {
+    position: absolute;
+    width: 332px;
+    height: 332px;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    background-color: #79cbca;
+    border-radius: 50%;
+    filter: blur(151px);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.features-section .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.features-header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 64px;
+}
+
+.features-tagline {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    color: var(--color-text-light);
+}
+
+.features-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 1.2;
+    letter-spacing: -1.1px;
+    color: var(--color-text-light);
+}
+
+.features-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #b5b6b7;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.12);
+    padding: 44px 50px;
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.feature-card-intro {
+    grid-column: span 2;
+}
+
+.feature-card-intro h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.5;
+    color: #9d9daf;
+}
+
+.feature-card-intro .highlight {
+    background-color: #1fc329;
+    color: var(--color-text-light);
+    border-radius: 60px;
+    padding: 2px 15px;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.feature-card h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-text-light);
+}
+
+.feature-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feature-card li {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--color-text-light-secondary);
+    line-height: 1.4;
+}
+
+@media (max-width: 1200px) {
+    .features-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .feature-card-intro {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .features-header {
+        padding: 0 20px;
+        text-align: center;
+        align-items: center;
+    }
+    .features-grid {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+    .feature-card-intro {
+        grid-column: span 1;
+        text-align: center;
+    }
+    .feature-card {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* CSS for section section:pricing */
+.pricing-section {
+    background-color: var(--color-background-secondary);
+    padding: 80px 0;
+    box-shadow: inset 0px 0px 40px 0px rgba(255, 255, 255, 0.2);
+}
+.pricing-bg-blur {
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    background-color: #79cbca;
+    border-radius: 50%;
+    filter: blur(200px);
+    opacity: 0.5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.pricing-section .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.pricing-header {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0 64px;
+}
+.pricing-tagline {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--color-text-light);
+}
+.pricing-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 37px;
+    color: var(--color-text-light);
+}
+.tabs-container {
+    display: flex;
+    justify-content: center;
+}
+.tab-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.tab-list {
+    display: flex;
+    gap: 11px;
+}
+.tab-btn, .tab-btn-amount {
+    padding: 12px 22px;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.tab-btn.active, .tab-btn-amount.active {
+    border-color: #2ecd59;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--color-text-light);
+    backdrop-filter: blur(1px);
+    box-shadow: inset 0px 0px 30px 0px rgba(255, 255, 255, 0.05);
+}
+.pricing-content {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.pricing-details-card, .pricing-summary-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--color-border);
+    border-radius: 30px;
+    padding: 15px 29px;
+    backdrop-filter: blur(1px);
+    box-shadow: inset 0px 0px 30px 0px rgba(255, 255, 255, 0.05);
+}
+.details-list {
+    display: flex;
+    flex-direction: column;
+    width: 637px;
+}
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--color-border-dark);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+.detail-item:last-child { border-bottom: none; }
+.detail-item.header {
+    justify-content: center;
+    color: #22a02a;
+    font-weight: 500;
+}
+.detail-item span:first-child { color: #cccccc; }
+.detail-item span:last-child { color: var(--color-text-light); font-weight: 500; }
+.pricing-summary-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 26px 29px;
+    width: 435px;
+    box-sizing: border-box;
+}
+.price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 37px;
+}
+.price-info { text-align: center; flex-grow: 1; }
+.price-amount {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--color-text-light);
+}
+.price-description {
+    font-size: 18px;
+    color: var(--color-text-light);
+}
+.price-nav img { cursor: pointer; }
+.cta-button { width: 100%; }
+.trustpilot-widget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 26px 0;
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.trustpilot-widget .stars { display: flex; gap: 2px; }
+.trustpilot-widget p { font-size: 13px; }
+.trustpilot-widget p span { font-weight: 500; }
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding-top: 20px;
+}
+.payment-methods img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 1200px) {
+    .pricing-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .pricing-header { padding: 0 20px; text-align: center; }
+    .pricing-title { font-size: 28px; }
+    .tab-list { flex-wrap: wrap; justify-content: center; }
+    .pricing-details-card, .pricing-summary-card { width: 100%; max-width: 500px; }
+}
+
+/* CSS for section section:testimonials */
+.testimonials-section {
+    background-color: var(--color-background-light);
+    color: var(--color-text-dark);
+    padding: 80px 0 56px;
+}
+.testimonials-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+.testimonials-header {
+    text-align: left;
+    width: 100%;
+    max-width: 1137px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.testimonials-tagline {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--color-text-dark-secondary);
+    letter-spacing: 0.48px;
+}
+.testimonials-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 37px;
+    color: var(--color-text-dark);
+    letter-spacing: -1.1px;
+}
+.testimonial-card {
+    background-color: var(--color-background-light-gray);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1137px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.testimonial-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    max-width: 555px;
+}
+.testimonial-content blockquote {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.9px;
+    margin: 0;
+}
+.testimonial-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.author-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+.author-name {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.author-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--color-text-dark-secondary);
+}
+.read-more {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-primary-dark);
+}
+.testimonial-image {
+    flex-shrink: 0;
+}
+.testimonial-image img {
+    width: 450px;
+    height: 318px;
+    object-fit: cover;
+}
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+    opacity: 0.6;
+}
+.slider-arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--color-background-light);
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    box-shadow: 0px 8px 30px 0px rgba(1, 22, 36, 0.08);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 992px) {
+    .testimonial-card { flex-direction: column; text-align: center; }
+    .testimonial-footer { flex-direction: column; gap: 20px; }
+}
+
+/* CSS for section section:faq */
+.faq-section {
+    background-color: var(--color-background-light);
+    color: var(--color-text-dark);
+    padding: 80px 0;
+    border-top: 1px solid #e6e8e9;
+}
+.faq-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+.faq-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 815px;
+}
+.faq-tagline {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--color-text-dark-secondary);
+}
+.faq-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 37px;
+}
+.faq-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.faq-list {
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.faq-item {
+    background-color: var(--color-background-light-gray);
+    border-radius: 12px;
+    padding: 20px 40px;
+}
+.faq-item[open] {
+    padding-bottom: 20px;
+}
+.faq-item summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+.faq-answer {
+    margin-top: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    color: var(--color-text-dark-secondary);
+    line-height: 1.4;
+}
+.faq-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-background-light);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-image: url('images/I1_2899_3020_60503.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+.faq-item[open] > summary .faq-icon {
+    transform: rotate(180deg);
+    background-image: url('images/1_2897.svg');
+}
+
+/* CSS for section section:footer */
+.site-footer {
+    background-color: var(--color-background-light-gray);
+    color: var(--color-text-dark);
+    padding: 64px 0;
+}
+.site-footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-column.about-us {
+    max-width: 240px;
+}
+.footer-logo {
+    width: 42px;
+    height: 41.25px;
+}
+.about-us p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14.1px;
+    line-height: 1.4;
+}
+.about-us p:nth-of-type(1) {
+    font-weight: 700;
+}
+.about-us p:nth-of-type(2) {
+    font-weight: 500;
+    color: rgba(1, 22, 36, 0.6);
+}
+.footer-column h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+.footer-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-column ul li a, .footer-column ul li {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14.1px;
+    color: rgba(1, 22, 36, 0.6);
+    transition: color 0.3s ease;
+}
+.footer-column ul li a:hover {
+    color: var(--color-text-dark);
+}
+.social-links {
+    display: flex;
+    gap: 0;
+}
+.social-links a {
+    padding: 6px;
+}
+.footer-disclaimer {
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: -0.45px;
+}
+@media (max-width: 992px) {
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-column {
+        align-items: center;
+    }
+    .social-links {
+        justify-content: center;
+    }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="hero" class="hero-section">
+    <div class="hero-bg-blur"></div>
+    <div class="container">
+        <header class="main-header">
+            <img src="images/1_2571.png" alt="MDTC Logo" class="logo">
+            <nav class="main-nav">
+                <a href="#hero">Home</a>
+                <a href="#features">Challenge</a>
+                <a href="#about">About</a>
+                <a href="#affiliate">Affiliate</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="#login" class="btn btn-primary">Log-In</a>
+        </header>
+
+        <div class="hero-content">
+            <div class="prop-challenge-badge">
+                <!--merged image-->
+                <div class="avatar-group">
+                    <img src="images/acd79576db2f255c593a7c578b8996bad5bac07c.png" alt="User avatar 1" class="avatar">
+                    <img src="images/52a1cd45fc3fde158416bea3e4416eea53589f85.png" alt="User avatar 2" class="avatar">
+                    <img src="images/1_2562.svg" alt="User avatar 3" class="avatar">
+                    <div class="avatar avatar-placeholder"></div>
+                </div>
+                <span>MDTC Prop Challenge</span>
+            </div>
+            <h1 class="hero-title">Join the MDTC Challenge<br>with No Time Limits</h1>
+            <p class="hero-subtitle">Other firms talk about funding. We actually give it—with no tricks.</p>
+            <a href="#pricing" class="btn btn-primary start-challenge-btn">Start Challenge</a>
+        </div>
+    </div>
+</section>
+<section id="features" class="features-section">
+    <div class="features-bg-blur"></div>
+    <div class="container">
+        <div class="features-header">
+            <p class="features-tagline">Challenge Types</p>
+            <h2 class="features-title">Introducing MDTC Trader Centric Challenge</h2>
+            <p class="features-subtitle">Get Funded Instantly—No Challenge, No Waiting</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card-intro">
+                <h3>MDTC offers <span class="highlight">3 types</span> of challenges for our expert Traders</h3>
+            </div>
+            <div class="feature-card">
+                <h4>MDTC Instant</h4>
+                <ul>
+                    <li>Profit Target: P1: 8% | P2: 5%</li>
+                    <li>Maximum Daily Loss: 5%</li>
+                    <li>Maximum Overall Loss: 10%</li>
+                    <li>Minimum Trading Days: 5</li>
+                    <li>First Reward: 21 Days</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h4>MDTC 1-Step</h4>
+                <ul>
+                    <li>Profit Target: P1: 10%</li>
+                    <li>Maximum Daily Loss: 3%</li>
+                    <li>Maximum Overall Loss: 6%</li>
+                    <li>Minimum Trading Days: 2</li>
+                    <li>First Reward: 5 Days</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h4>MDTC Million dollar</h4>
+                <ul>
+                    <li>Profit Target: P1: 8% | P2: 4%</li>
+                    <li>Maximum Daily Loss: 4%</li>
+                    <li>Maximum Overall Loss: 8%</li>
+                    <li>Minimum Trading Days: 5</li>
+                    <li>First Reward: 21 Days</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="pricing" class="pricing-section">
+    <div class="pricing-bg-blur"></div>
+    <div class="container">
+        <div class="pricing-header">
+            <p class="pricing-tagline">CHALLENGES</p>
+            <h2 class="pricing-title">Get Funded Instantly—No Challenge, No Waiting</h2>
+        </div>
+
+        <div class="tabs-container">
+            <div class="tab-controls">
+                <div class="tab-list">
+                    <button class="tab-btn active">INSTANT</button>
+                    <button class="tab-btn">1 STEP</button>
+                    <button class="tab-btn">MILLION DOLLAR</button>
+                </div>
+                <div class="tab-list">
+                    <button class="tab-btn-amount active">5k</button>
+                    <button class="tab-btn-amount">10k</button>
+                    <button class="tab-btn-amount">25k</button>
+                    <button class="tab-btn-amount">50k</button>
+                    <button class="tab-btn-amount">100k</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pricing-content">
+            <div class="pricing-details-card">
+                <ul class="details-list">
+                    <li class="detail-item header">Instant Funded Account (No Evaluation Needed)</li>
+                    <li class="detail-item"><span>Time Limit</span> <span>Unlimitted</span></li>
+                    <li class="detail-item"><span>Daily Drawdown</span> <span>3%</span></li>
+                    <li class="detail-item"><span>Maximum Drawdown</span> <span>10%</span></li>
+                    <li class="detail-item"><span>Profit Target</span> <span>10%</span></li>
+                    <li class="detail-item"><span>Profit Split</span> <span>90%</span></li>
+                    <li class="detail-item"><span>Consistency Rule</span> <span>No</span></li>
+                    <li class="detail-item"><span>Lot Limits</span> <span>No</span></li>
+                    <li class="detail-item"><span>Hold Trades Overnight</span> <span>Yes</span></li>
+                    <li class="detail-item"><span>News Trading</span> <span>Allowed</span></li>
+                    <li class="detail-item"><span>Trailing Drawdowns</span> <span>No</span></li>
+                    <li class="detail-item"><span>EAs Allowed</span> <span>Yes</span></li>
+                </ul>
+            </div>
+            <div class="pricing-summary-card">
+                <div class="price-box">
+                    <div class="price-info">
+                        <p class="price-amount">$199.00</p>
+                        <p class="price-description">5k challenge</p>
+                    </div>
+                    <div class="price-nav">
+                        <img src="images/1_2730.svg" alt="Previous">
+                        <img src="images/1_2734.svg" alt="Next">
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary cta-button">Start Your $1M Challenge Now</a>
+                <div class="trustpilot-widget">
+                    <div class="stars">
+                        <img src="images/1_2739.svg" alt="Star">
+                        <img src="images/1_2742.svg" alt="Star">
+                        <img src="images/1_2746.svg" alt="Star">
+                        <img src="images/1_2750.svg" alt="Star">
+                        <img src="images/1_2754.svg" alt="Star">
+                    </div>
+                    <p><span>352</span> reviews on</p>
+                    <img src="images/1_2759.svg" alt="Trustpilot logo">
+                </div>
+                <div class="payment-methods">
+                    <img src="images/1_2766.svg" alt="Visa">
+                    <img src="images/I1_2883_3020_60685_3020_60272.svg" alt="Mastercard">
+                    <img src="images/I1_2884_3020_60715_3020_60284.svg" alt="PayPal">
+                    <img src="images/1_2802.svg" alt="Bitcoin">
+                    <img src="images/1_2811.svg" alt="Payment method">
+                    <img src="images/1_2827.svg" alt="Payment method">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="testimonials" class="testimonials-section">
+    <div class="container">
+        <div class="testimonials-header">
+            <p class="testimonials-tagline">TRADER SPOTLIGHTS</p>
+            <h2 class="testimonials-title">Real Results, Proven Impact</h2>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-content">
+                <blockquote>
+                    “After failing with other firms I appreciated the unlimited retries policy here. Finally got my funded account on the third attempt and it was worth the persistence. The platform runs smoothly and payouts arrive on schedule..”
+                </blockquote>
+                <div class="testimonial-footer">
+                    <div class="author-info">
+                        <img src="images/Image_1_30393c77-9e90-4638-bf6f-a8ec19382330.png" alt="D. Ellis" class="author-avatar">
+                        <div class="author-details">
+                            <p class="author-name">D. Ellis</p>
+                            <p class="author-title">Trader</p>
+                        </div>
+                    </div>
+                    <a href="#" class="read-more">Read More Success Stories <img src="images/I1_2878_3020_60190.svg" alt="arrow icon"></a>
+                </div>
+            </div>
+            <div class="testimonial-image">
+                <img src="images/1_2879.png" alt="Trader working on laptop">
+            </div>
+        </div>
+        <div class="partner-logos">
+            <img src="images/I1_2882_3020_60829_3020_60262.svg" alt="Spectra logo">
+            <img src="images/I1_2883_3020_60685_3020_60272.svg" alt="Novasphere logo">
+            <img src="images/I1_2884_3020_60715_3020_60284.svg" alt="Ascendia logo">
+            <img src="images/I1_2885_3020_60738_3020_60298.svg" alt="Innovi logo">
+        </div>
+        <button class="slider-arrow">
+            <img src="images/I1_2880_3020_60259.svg" alt="Next testimonial">
+        </button>
+    </div>
+</section>
+<section id="faq" class="faq-section">
+    <div class="container">
+        <div class="faq-header">
+            <p class="faq-tagline">FREQUENTLY ASKED QUESTIONS</p>
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <p class="faq-subtitle">Clarify any uncertainties you might have, ensuring a smooth and hassle-free experience for everyone.</p>
+        </div>
+        <div class="faq-list">
+            <details class="faq-item" open>
+                <summary>
+                    How does the Million Dollar Challenge work?
+                    <span class="faq-icon"></span>
+                </summary>
+                <p class="faq-answer">Our service primarily aims to provide users with seamless digital solutions tailored to their needs, helping them enhance productivity and make the most of their time.</p>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    Are there monthly fees?
+                    <span class="faq-icon"></span>
+                </summary>
+                <p class="faq-answer">Content for this question goes here.</p>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    Do I keep 100% of my profits?
+                    <span class="faq-icon"></span>
+                </summary>
+                <p class="faq-answer">Content for this question goes here.</p>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    Can I use bots or trade news?
+                    <span class="faq-icon"></span>
+                </summary>
+                <p class="faq-answer">Content for this question goes here.</p>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    What happens if I fail?
+                    <span class="faq-icon"></span>
+                </summary>
+                <p class="faq-answer">Content for this question goes here.</p>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    What is FTIC and how does it protect me?
+                    <span class="faq-icon"></span>
+                </summary>
+                <p class="faq-answer">Content for this question goes here.</p>
+            </details>
+        </div>
+    </div>
+</section>
+<footer id="contact" class="site-footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-column about-us">
+                <img src="images/1_2909.png" alt="MDTC Logo" class="footer-logo">
+                <p>Trade with Up to $1,000,000 of Capital. Keep 90% of the Profits.</p>
+                <p>No time limits. No trailing drawdowns. No consistency rules. Just trader-friendly funding built for your success.</p>
+            </div>
+            <div class="footer-column links">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">Terms of Service FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Risk Disclosure</a></li>
+                    <li><a href="#">Economic Calendar</a></li>
+                    <li><a href="#">Position Size Calculator</a></li>
+                    <li><a href="#">Profit Calculator</a></li>
+                    <li><a href="#">Pip Calculator</a></li>
+                    <li><a href="#">Drawdown Calculator</a></li>
+                    <li><a href="#">Risk of Ruin Calculator</a></li>
+                    <li><a href="#">Pivot Point Calculator</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column company">
+                <h4>Company</h4>
+                <ul>
+                    <li>Address: Dubai World Trade Centre C1, Sheikh Zayed Road, Dubai, UAE</li>
+                    <li>Support: support@mdtcfunded.com</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><img src="images/I1_2932_3020_60554.svg" alt="X"></a>
+                    <a href="#"><img src="images/I1_2933_3020_60562.svg" alt="Facebook"></a>
+                    <a href="#"><img src="images/I1_2934_3020_60574_3020_59589.svg" alt="Instagram"></a>
+                    <a href="#"><img src="images/I1_2935_3020_60586.svg" alt="TikTok"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-disclaimer">
+            <p>Mdtcfunded.com is owned and operated by MDTC LLC, a limited company registered in the United Arab Emirates. Disclaimer: MDTC LLC does not undertake any regulated activities. MDTC LLC does not act as or conduct services as a broker. MDTC LLC is not a financial institution of any kind. It’s not a broker, and it does not ‎market for any brokerage services.‎ MDTC LLC does not act as or conduct services as a custodian. Purchases of programs should not be considered deposits. All program fees are used for operation costs including, but not limited to, staff, technology and other business-related expenses. Information on this site is not directed at residents in any country or jurisdiction where such distribution or use would be contrary to local law or regulation. Risk Disclosure: The Services Provided On This Website Are Professional Skill-Assessment Services. The Outcome Of The Proposed Services Is Necessarily Determined By The Individual Professional Skill Level And Ability To Perform Under The Program Guidelines And Objectives As Elaborated For Each Service Separately. Clients Are Advised To Conclude A Thorough Study Of The Requirements Of The Funding Programs Before Signing Up For Any Of The Services. All accounts operate within a simulated trading environment. These platforms mirror real trading activities, but they do not engage with genuine money or assets. Any earnings, profits, or losses experienced within this simulated trading context do not translate to actual financial outcomes and cannot be claimed or actualized beyond this educational context.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About MDTC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=DM+Sans:wght@500;700&family=Poppins:wght@600&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    box-sizing: border-box;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    width: 42px;
+    height: auto;
+    display: block;
+}
+.main-nav ul {
+    display: flex;
+    gap: 22px;
+}
+.main-nav a {
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    color: var(--color-text-light);
+}
+.mobile-nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 1024px) {
+    .main-nav, .login-btn {
+        display: none;
+    }
+    .mobile-nav-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .mobile-nav-toggle span {
+        width: 25px;
+        height: 3px;
+        background-color: var(--color-text-light);
+        border-radius: 2px;
+    }
+}
+
+/* CSS for section section:hero */
+.hero-section {
+    background-color: var(--color-background-dark);
+    padding: 160px 0 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    min-height: 588px;
+    box-sizing: border-box;
+}
+.hero-bg-blur {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    width: 1024px;
+    height: 960px;
+    background: linear-gradient(180deg, #10490a 0%, #10490a 100%);
+    filter: blur(200px);
+    opacity: 0.9;
+    transform: translateX(-50%) rotate(35deg);
+    z-index: 0;
+}
+.hero-container {
+    position: relative;
+    z-index: 1;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 11px;
+    background: linear-gradient(159deg, #10490a 0%, rgba(38, 175, 24, 0) 129.81%);
+    border-radius: 9px;
+    margin-bottom: 24px;
+}
+.badge-avatars {
+    position: relative;
+    width: 64px;
+    height: 24px;
+}
+.avatar-item {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1.6px solid #22a02a;
+    overflow: hidden;
+    background-color: var(--color-background-dark);
+}
+.avatar-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-badge span {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    color: var(--color-text-light);
+}
+.hero-content h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.4;
+    color: var(--color-text-light);
+}
+.hero-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--color-text-muted-light);
+    max-width: 770px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* CSS for section section:story */
+.story-section {
+    background-color: var(--color-background-dark);
+    padding: 80px 0;
+}
+.story-header {
+    margin-bottom: 50px;
+}
+.story-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.story-header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 1.2;
+    letter-spacing: -1.1px;
+    max-width: 1040px;
+    margin-bottom: 15px;
+}
+.story-description {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #b5b6b7;
+}
+.story-cards {
+    display: flex;
+    gap: 30px;
+}
+.story-card {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1.4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 43px;
+    backdrop-filter: blur(1px);
+    box-shadow: inset 0px 0px 43px 0px rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.story-card h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.1;
+}
+.story-card p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.4;
+}
+@media (max-width: 992px) {
+    .story-cards {
+        flex-direction: column;
+    }
+}
+
+/* CSS for section section:features */
+.features-section {
+    background-color: var(--color-background-light);
+    color: var(--color-text-dark);
+    padding: 100px 0;
+}
+.features-bg-blur {
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    filter: blur(200px);
+    opacity: 0.15;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.features-header {
+    margin-bottom: 64px;
+}
+.features-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.features-header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 1.2;
+    letter-spacing: -1.1px;
+    margin-bottom: 15px;
+}
+.features-description {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 51px 24px;
+}
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.feature-icon-wrapper {
+    width: 64px;
+    height: 64px;
+    background-color: var(--color-background-white);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 40px 0px rgba(34, 160, 42, 0.18);
+    margin-bottom: 12px;
+}
+.feature-icon-wrapper img {
+    width: 32px;
+    height: 32px;
+}
+.feature-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.72px;
+}
+.feature-item p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.4;
+    color: var(--color-text-muted);
+}
+
+/* CSS for section section:stats */
+.stats-section {
+    background-color: var(--color-background-white);
+    color: var(--color-text-dark);
+    padding: 80px 0;
+}
+.stats-header {
+    margin-bottom: 60px;
+}
+.stats-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+.stats-header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 1.2;
+    letter-spacing: -1.1px;
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.stat-icon-wrapper {
+    width: 63px;
+    height: 63px;
+    background-color: var(--color-background-white);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 40px 0px rgba(1, 22, 36, 0.08);
+    border: 1px solid rgba(230, 232, 233, 0.05);
+}
+.stat-icon-wrapper img {
+    width: 32px;
+    height: 32px;
+}
+.stat-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.stat-number {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1;
+    color: #10490a;
+    margin-bottom: 12px;
+}
+.stat-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.72px;
+}
+.stat-description {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.4;
+    color: rgba(1, 22, 36, 0.5);
+}
+
+/* CSS for section section:faq */
+.faq-section {
+    background-color: var(--color-background-white);
+    color: var(--color-text-dark);
+    padding: 80px 0;
+    border-top: 1px solid #e6e8e9;
+}
+.faq-container {
+    max-width: 1080px;
+}
+.faq-header {
+    text-align: center;
+    margin-bottom: 55px;
+}
+.faq-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.faq-header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 1.2;
+    letter-spacing: -1.1px;
+    margin-bottom: 15px;
+}
+.faq-description {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 815px;
+    margin: 0 auto;
+}
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.faq-item {
+    background-color: var(--color-background-light);
+    border-radius: 12px;
+    padding: 20px 0;
+}
+.faq-item[open] {
+    padding-bottom: 32px;
+}
+.faq-item summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    cursor: pointer;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -0.6px;
+}
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+.faq-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+.faq-item[open] .faq-icon {
+    transform: rotate(-180deg);
+}
+.faq-item p {
+    padding: 16px 40px 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #67737c;
+    max-width: 695px;
+}
+
+/* CSS for section section:footer */
+.site-footer {
+    background-color: var(--color-background-light);
+    color: var(--color-text-dark);
+    padding: 64px 0;
+}
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 77px;
+    margin-bottom: 64px;
+}
+.footer-about, .footer-links, .footer-company {
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo {
+    margin-bottom: 17px;
+    width: 42px;
+    height: 41px;
+}
+.footer-about h4 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.45px;
+    margin-bottom: 17px;
+}
+.footer-about p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.45px;
+    color: rgba(1, 22, 36, 0.6);
+}
+.footer-links h3, .footer-company h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+.footer-links ul, .footer-company ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.footer-links li, .footer-company li {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.45px;
+    color: rgba(1, 22, 36, 0.6);
+}
+.footer-company ul {
+    margin-bottom: 16px;
+}
+.social-links {
+    display: flex;
+    gap: 12px;
+}
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+.social-links img {
+    width: 28px;
+    height: 28px;
+}
+.footer-disclaimer {
+    padding-top: 32px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.3;
+    letter-spacing: -0.45px;
+    color: var(--color-text-dark);
+}
+@media (max-width: 992px) {
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-about {
+        grid-column: 1 / -1;
+    }
+}
+@media (max-width: 768px) {
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header id="header" class="site-header">
+    <div class="container header-container">
+        <a href="#" class="logo">
+            <img src="images/1_2956.png" alt="MDTC Logo">
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Challenge</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Affiliate</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn login-btn">Log-In</a>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+<section id="hero" class="hero-section">
+    <div class="hero-bg-blur"></div>
+    <div class="container hero-container">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <!--merged image-->
+                <div class="badge-avatars">
+                    <div class="avatar-item" style="left: 0;">
+                        <img src="images/acd79576db2f255c593a7c578b8996bad5bac07c.png" alt="Avatar 1">
+                    </div>
+                    <div class="avatar-item" style="left: 13px;">
+                        <img src="images/52a1cd45fc3fde158416bea3e4416eea53589f85.png" alt="Avatar 2">
+                    </div>
+                    <div class="avatar-item" style="left: 26px;">
+                         <img src="images/I1_2947_254_60274.png" alt="Avatar 3">
+                    </div>
+                    <div class="avatar-item" style="left: 39px;">
+                        <img src="images/1_2948.svg" alt="Avatar 4">
+                    </div>
+                </div>
+                <span>About MDTC</span>
+            </div>
+            <h1>About MDTC</h1>
+            <p>We’re traders first. That’s why we built a prop firm that finally works for traders—not against them.</p>
+            <a href="#" class="btn hero-btn">Join Us Now</a>
+        </div>
+    </div>
+</section>
+<section id="story" class="story-section">
+    <div class="container">
+        <div class="story-header">
+            <p class="story-subtitle">MISSION & STORY</p>
+            <h2>MDTC was created by traders who were tired of the games.</h2>
+            <p class="story-description">Get Funded Instantly—No Challenge, No Waiting</p>
+        </div>
+        <div class="story-cards">
+            <article class="story-card">
+                <h3>Our Story</h3>
+                <p>Other firms made it nearly impossible to pass. Hidden rules. Daily limits. Trailing drawdowns. Time pressure. Fake "consistency" requirements. We went through all of it—and lost, even when we were winning.</p>
+            </article>
+            <article class="story-card">
+                <h3>Our Mission</h3>
+                <p>MDTC gives traders a real chance. No tricks. No time limits. No red tape. Just fair funding, fast payouts, and rules that actually make sense. We aim to incentivize skilled traders with a consistent track record of profitability to remain with us.</p>
+            </article>
+        </div>
+    </div>
+</section>
+<section id="features" class="features-section">
+    <div class="features-bg-blur"></div>
+    <div class="container">
+        <div class="features-header">
+            <p class="features-subtitle">Features</p>
+            <h2>What Makes MDTC Different</h2>
+            <p class="features-description">We removed the fine print, restrictions, and fake rules.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon-wrapper"><img src="images/1_2988.svg" alt="Payouts Icon"></div>
+                <h3>Payouts From Day 1</h3>
+                <p>Start earning immediately, no waiting period for your first payout.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon-wrapper"><img src="images/1_2995.svg" alt="Time Limits Icon"></div>
+                <h3>No Time Limits</h3>
+                <p>Trade at your pace, no deadlines or forced pressure.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon-wrapper"><img src="images/1_3002.svg" alt="Drawdowns Icon"></div>
+                <h3>No Trailing Drawdowns</h3>
+                <p>Your gains are safe, drawdowns don’t follow your balance.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon-wrapper"><img src="images/1_3009.svg" alt="Consistency Icon"></div>
+                <h3>No Consistency Rules</h3>
+                <p>Trade flexibly, no daily targets or rigid performance requirements.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon-wrapper"><img src="images/1_3016.svg" alt="Overnight Trades Icon"></div>
+                <h3>Hold Trades Overnight</h3>
+                <p>Keep positions open as long as needed, even overnight.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon-wrapper"><img src="images/1_3023.svg" alt="News Trading Icon"></div>
+                <h3>News Trading Allowed</h3>
+                <p>Capitalize on volatility, news trading is fully permitted.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon-wrapper"><img src="images/1_3030.svg" alt="EAs & Bots Icon"></div>
+                <h3>EAs & Bots Welcome</h3>
+                <p>Automate freely, expert advisors and bots are allowed.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon-wrapper"><img src="images/1_3037.svg" alt="Transparent Rules Icon"></div>
+                <h3>Transparent Rules, No Surprises</h3>
+                <p>Clear, honest guidelinesnothing hidden, no unexpected rules.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="stats" class="stats-section">
+    <div class="container">
+        <div class="stats-header">
+            <p class="stats-subtitle">PERFORMANCE STATS</p>
+            <h2>Proven Payouts. Real Impact</h2>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-icon-wrapper"><img src="images/1_3053.svg" alt="Paid Out Icon"></div>
+                <div class="stat-content">
+                    <p class="stat-number">$15M+</p>
+                    <h3>Paid Out</h3>
+                    <p class="stat-description">Every payout proves our model works. Traders earn what they deserve, without delays or gimmicks.</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon-wrapper"><img src="images/1_3066.svg" alt="Satisfaction Rate Icon"></div>
+                <div class="stat-content">
+                    <p class="stat-number">95%</p>
+                    <h3>Satisfaction Rate</h3>
+                    <p class="stat-description">We’re constantly improving based on feedback. Our goal? A trading experience that actually puts the trader first.</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon-wrapper"><img src="images/1_3078.svg" alt="Single Payout Icon"></div>
+                <div class="stat-content">
+                    <p class="stat-number">$90K+</p>
+                    <h3>in a single payout</h3>
+                    <p class="stat-description">When performance meets opportunity, the results are massive. We’re here to support more moments just like this.</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon-wrapper"><img src="images/1_3091.svg" alt="Hours Saved Icon"></div>
+                <div class="stat-content">
+                    <p class="stat-number">20,000+</p>
+                    <h3>Hours Saved</h3>
+                    <p class="stat-description">Every moment saved is a moment that can be spent trading smarter. That’s the power of efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="faq" class="faq-section">
+    <div class="container faq-container">
+        <div class="faq-header">
+            <p class="faq-subtitle">Frequently Asked Questions</p>
+            <h2>Frequently Asked Questions</h2>
+            <p class="faq-description">Clarify any uncertainties you might have, ensuring a smooth and hassle-free experience for everyone.</p>
+        </div>
+        <div class="faq-accordion">
+            <details class="faq-item" open>
+                <summary>
+                    <span>How does the Million Dollar Challenge work?</span>
+                    <img src="images/1_3111.svg" class="faq-icon" alt="Toggle icon">
+                </summary>
+                <p>Our service primarily aims to provide users with seamless digital solutions tailored to their needs, helping them enhance productivity and make the most of their time.</p>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    <span>Are there monthly fees?</span>
+                    <img src="images/I1_3113_3020_60503.svg" class="faq-icon" alt="Toggle icon">
+                </summary>
+                <p>Content for this question goes here.</p>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    <span>Do I keep 100% of my profits?</span>
+                    <img src="images/I1_3114_3020_60516.svg" class="faq-icon" alt="Toggle icon">
+                </summary>
+                <p>Content for this question goes here.</p>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    <span>Can I use bots or trade news?</span>
+                    <img src="images/I1_3115_3020_60529.svg" class="faq-icon" alt="Toggle icon">
+                </summary>
+                <p>Content for this question goes here.</p>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    <span>What happens if I fail?</span>
+                    <img src="images/I1_3116_3020_60529.svg" class="faq-icon" alt="Toggle icon">
+                </summary>
+                <p>Content for this question goes here.</p>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    <span>What is FTIC and how does it protect me?</span>
+                    <img src="images/I1_3117_3020_60529.svg" class="faq-icon" alt="Toggle icon">
+                </summary>
+                <p>Content for this question goes here.</p>
+            </details>
+        </div>
+    </div>
+</section>
+<footer id="footer" class="site-footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-about">
+                <a href="#" class="footer-logo"><img src="images/1_3123.png" alt="MDTC Logo"></a>
+                <h4>Trade with Up to $1,000,000 of Capital. Keep 90% of the Profits.</h4>
+                <p>No time limits. No trailing drawdowns. No consistency rules. Just trader-friendly funding built for your success.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Terms of Service FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Risk Disclosure</a></li>
+                    <li><a href="#">Economic Calendar</a></li>
+                    <li><a href="#">Position Size Calculator</a></li>
+                    <li><a href="#">Profit Calculator</a></li>
+                    <li><a href="#">Pip Calculator</a></li>
+                    <li><a href="#">Drawdown Calculator</a></li>
+                    <li><a href="#">Risk of Ruin Calculator</a></li>
+                    <li><a href="#">Pivot Point Calculator</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-company">
+                <h3>Company</h3>
+                <ul>
+                    <li>Address: Dubai World Trade Centre C1, Sheikh Zayed Road, Dubai, UAE</li>
+                    <li>Support: support@mdtcfunded.com</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><img src="images/I1_3146_3020_60554.svg" alt="Social Icon X"></a>
+                    <a href="#"><img src="images/I1_3147_3020_60562.svg" alt="Social Icon Facebook"></a>
+                    <a href="#"><img src="images/I1_3148_3020_60574_3020_59589.svg" alt="Social Icon Instagram"></a>
+                    <a href="#"><img src="images/I1_3149_3020_60586.svg" alt="Social Icon TikTok"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-disclaimer">
+            <p>Mdtcfunded.com is owned and operated by MDTC LLC, a limited company registered in the United Arab Emirates. Disclaimer: MDTC LLC does not undertake any regulated activities. MDTC LLC does not act as or conduct services as a broker. MDTC LLC is not a financial institution of any kind. It’s not a broker, and it does not ‎market for any brokerage services.‎ MDTC LLC does not act as or conduct services as a custodian. Purchases of programs should not be considered deposits. All program fees are used for operation costs including, but not limited to, staff, technology and other business-related expenses. Information on this site is not directed at residents in any country or jurisdiction where such distribution or use would be contrary to local law or regulation. Risk Disclosure: The Services Provided On This Website Are Professional Skill-Assessment Services. The Outcome Of The Proposed Services Is Necessarily Determined By The Individual Professional Skill Level And Ability To Perform Under The Program Guidelines And Objectives As Elaborated For Each Service Separately. Clients Are Advised To Conclude A Thorough Study Of The Requirements Of The Funding Programs Before Signing Up For Any Of The Services. All accounts operate within a simulated trading environment. These platforms mirror real trading activities, but they do not engage with genuine money or assets. Any earnings, profits, or losses experienced within this simulated trading context do not translate to actual financial outcomes and cannot be claimed or actualized beyond this educational context.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
