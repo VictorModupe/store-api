@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  min-height: 100vh;
+  background: black;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background gradient blur effect */
+#background-gradient {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 843px;
+  height: 581px;
+  opacity: 0.9;
+  filter: blur(100px);
+  transform: rotate(35deg) translateY(-40px) translateX(400px);
+  background: linear-gradient(180deg, #10490a 0%, #2ecd59 100%);
+  z-index: 0;
+}
+
+/* Navigation */
+#navigation {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+}
+
+#logo {
+  width: 40px;
+  height: 40px;
+  background: #2ecd59;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+#nav-links {
+  display: none;
+  align-items: center;
+  gap: 32px;
+}
+
+#nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+#nav-link:hover {
+  color: #2ecd59;
+}
+
+#login-btn {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px 26px;
+  border-radius: 8px;
+  border: 1px solid #2ecd59;
+  background: linear-gradient(
+    93deg,
+    #26af18 12.78%,
+    rgba(46, 205, 89, 0.24) 133.49%
+  );
+  text-shadow: 0px 0.9px 0.7px #10490a;
+  box-shadow: 0px 1px 35.5px -1px rgba(46, 205, 89, 0.4);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#login-btn:hover {
+  transform: scale(1.05);
+}
+
+#mobile-menu-btn {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#menu-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hero Section */
+#hero-section {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+  padding: 24px;
+  text-align: center;
+}
+
+#hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 1024px;
+}
+
+/* Badge */
+#badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #2ecd59;
+  background: linear-gradient(to right, #10490a, transparent);
+}
+#profile-images {
+  display: flex;
+  align-items: center;
+  gap: -8px;
+}
+
+#profile-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #22a02a;
+  margin-left: -8px;
+}
+
+#profile-circle.green {
+  background: #2ecd59;
+}
+
+#profile-circle.gray {
+  background: #9ca3af;
+}
+
+#profile-img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #22a02a;
+  margin-left: -8px;
+}
+
+#badge-text {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+/* Main Heading */
+#main-heading {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Description */
+#description {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+  max-width: 768px;
+  line-height: 1.6;
+  padding: 0 16px;
+}
+
+/* CTA Button */
+#cta-btn {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px 26px;
+  border-radius: 8px;
+  border: 1px solid #2ecd59;
+  background: linear-gradient(
+    93deg,
+    #26af18 12.78%,
+    rgba(46, 205, 89, 0.24) 133.49%
+  );
+  text-shadow: 0px 0.9px 0.7px #10490a;
+  box-shadow: 0px 1px 35.5px -1px rgba(46, 205, 89, 0.4);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-top: 24px;
+}
+
+#cta-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  #main-heading {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #navigation {
+    padding: 12px 40px;
+  }
+
+  #main-heading {
+    font-size: 4rem;
+  }
+
+  #description {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #nav-links {
+    display: flex;
+  }
+
+  #mobile-menu-btn {
+    display: none;
+  }
+
+  #main-heading {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  #main-heading {
+    font-size: 6rem;
+  }
+}
