@@ -216,7 +216,7 @@ ul {
 
 /* CSS for section section:story */
 .story-section {
-    background-color: var(--color-background-dark);
+    background-color: #2a2a2a;
     padding: 80px 0;
 }
 .story-header {
@@ -268,6 +268,7 @@ ul {
     font-weight: 700;
     font-size: 23px;
     line-height: 1.1;
+    color: #ffffff;
 }
 .story-card p {
     font-family: 'Space Grotesk', sans-serif;
