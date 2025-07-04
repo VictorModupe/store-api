@@ -197,19 +197,25 @@
 
         .container {
           max-width: 100%;
+          align-items: center;
         }
         
         .form-row {
           margin-bottom: 40px;
+          align-items: center;
         }
         
         .submit-btn {
           width: 100%;
           margin-top: 40px;
+          align-items: center;
+
         }
         
         .contact-info {
           margin-top: 40px;
           gap: 20px;
+          align-items: center;
+
         }
       }
