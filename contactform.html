@@ -1,0 +1,433 @@
+<style>
+      * {
+        margin: 0;
+        padding: 100;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 845px;
+        margin: 0 auto;
+      }
+
+      .form-container {
+        margin-bottom: 60px;
+      }
+
+      .form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin-bottom: 60px;
+      }
+
+      .form-row.two-columns {
+        flex-direction: column;
+      }
+
+      .form-group {
+        flex: 1;
+      }
+
+      .form-group label {
+        display: block;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 18px;
+      }
+
+      .required {
+        color: #f56c6c;
+        font-size: 16px;
+        font-weight: 700;
+        margin-left: 4px;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        background-color: #072604;
+        border: 1px solid #10490a;
+        border-radius: 8px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 14.67px 16px;
+        outline: none;
+        transition: all 0.3s ease;
+      }
+
+      .form-group input {
+        height: 48px;
+      }
+
+      .form-group textarea {
+        font-family:
+          "Roboto",
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 12px 16px;
+        resize: none;
+        min-height: 114px;
+      }
+
+      .form-group input::placeholder,
+      .form-group textarea::placeholder {
+        color: #687892;
+      }
+
+      .form-group textarea::placeholder {
+        color: #868e96;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        ring: 2px solid #2ecd59;
+        border-color: #2ecd59;
+      }
+
+      .submit-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 26px;
+        border-radius: 10px;
+        border: 1px solid #2ecd59;
+        background: linear-gradient(
+          93deg,
+          #26af18 12.78%,
+          rgba(46, 205, 89, 0.24) 133.49%
+        );
+        box-shadow: 0px 1px 35.5px -1px #2ecd59;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+        text-shadow: 0px 0.9px 0.7px #10490a;
+        min-width: 170px;
+        height: 52px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 60px;
+      }
+
+      .submit-btn:hover {
+        transform: scale(1.05);
+      }
+
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 60px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .contact-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        border: 1px solid #10490a;
+        background: linear-gradient(
+          205deg,
+          #10490a -2.83%,
+          #00b67a 48.58%,
+          #26af18 101.88%
+        );
+        padding: 8px;
+      }
+
+      .contact-text {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+
+      .success-message {
+        background-color: #26af18;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+        display: none;
+      }
+
+      .error-message {
+        background-color: #f56c6c;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+        display: none;
+      }
+
+      /* Responsive Design */
+      @media (min-width: 1024px) {
+        .form-row.two-columns {
+          flex-direction: row;
+          gap: 15px;
+        }
+
+        .contact-info {
+          flex-direction: row;
+          gap: 25px;
+          align-items: center;
+        }
+      }
+
+    </style>
+  </head>
+    <div class="container">
+      <div class="form-container">
+        <form id="contactForm">
+          <!-- First Name and Last Name Row -->
+          <div class="form-row two-columns">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Last Name"
+              />
+            </div>
+          </div>
+
+          <!-- Email Field -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">
+                Email
+                <span class="required">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Subject Field -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+              />
+            </div>
+          </div>
+
+          <!-- Message Field -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="message">
+                Your Message
+                <span class="required">*</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="submit-btn">Submit form</button>
+
+          <!-- Success/Error Messages -->
+          <div id="successMessage" class="success-message">
+            Thank you! Your message has been sent successfully.
+          </div>
+          <div id="errorMessage" class="error-message">
+            Please fill in all required fields correctly.
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <!-- Email Contact -->
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 21 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.4178 8.24597L11.7151 11.2568C11.0155 11.8118 10.0312 11.8118 9.33164 11.2568L5.59766 8.24597"
+                stroke="#C0BDE1"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M14.5901 18.37C17.1245 18.377 18.8327 16.2946 18.8327 13.7353V8.01167C18.8327 5.45234 17.1245 3.37 14.5901 3.37H6.40863C3.87417 3.37 2.16602 5.45234 2.16602 8.01167V13.7353C2.16602 16.2946 3.87417 18.377 6.40863 18.37H14.5901Z"
+                stroke="#C0BDE1"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <span class="contact-text">support@mdtcfunded.com</span>
+        </div>
+
+        <!-- Address Contact -->
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 21 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.5329 9.62026C12.5329 8.4692 11.6002 7.5365 10.45 7.5365C9.2989 7.5365 8.36621 8.4692 8.36621 9.62026C8.36621 10.7705 9.2989 11.7032 10.45 11.7032C11.6002 11.7032 12.5329 10.7705 12.5329 9.62026Z"
+                stroke="#C0BDE1"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.4498 18.37C9.45106 18.37 4.2002 14.1186 4.2002 9.67274C4.2002 6.1922 6.99778 3.37 10.4498 3.37C13.9018 3.37 16.7002 6.1922 16.7002 9.67274C16.7002 14.1186 11.4485 18.37 10.4498 18.37Z"
+                stroke="#C0BDE1"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <span class="contact-text"
+            >Dubai World Trade Centre, C1, Sheikh Zayed Road</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Form handling
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get form data
+          const formData = {
+            firstName: document.getElementById("firstName").value,
+            lastName: document.getElementById("lastName").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+          };
+
+          // Basic validation
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          const successMessage = document.getElementById("successMessage");
+          const errorMessage = document.getElementById("errorMessage");
+
+          // Hide previous messages
+          successMessage.style.display = "none";
+          errorMessage.style.display = "none";
+
+          if (!formData.email || !emailRegex.test(formData.email)) {
+            errorMessage.textContent = "Please enter a valid email address.";
+            errorMessage.style.display = "block";
+            return;
+          }
+
+          if (!formData.message.trim()) {
+            errorMessage.textContent = "Please enter your message.";
+            errorMessage.style.display = "block";
+            return;
+          }
+
+          // Simulate form submission
+          console.log("Form submitted:", formData);
+
+          // Show success message
+          successMessage.style.display = "block";
+
+          // Reset form
+          this.reset();
+
+          // Hide success message after 5 seconds
+          setTimeout(() => {
+            successMessage.style.display = "none";
+          }, 5000);
+        });
+
+      // Add focus effects
+      const inputs = document.querySelectorAll("input, textarea");
+      inputs.forEach((input) => {
+        input.addEventListener("focus", function () {
+          this.style.borderColor = "#2ECD59";
+          this.style.boxShadow = "0 0 0 2px rgba(46, 205, 89, 0.2)";
+        });
+
+        input.addEventListener("blur", function () {
+          this.style.borderColor = "#10490A";
+          this.style.boxShadow = "none";
+        });
+      });
+
+      // Real-time validation feedback
+      const emailInput = document.getElementById("email");
+      const messageInput = document.getElementById("message");
+
+      emailInput.addEventListener("blur", function () {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (this.value && !emailRegex.test(this.value)) {
+          this.style.borderColor = "#F56C6C";
+        }
+      });
+
+      messageInput.addEventListener("blur", function () {
+        if (this.required && !this.value.trim()) {
+          this.style.borderColor = "#F56C6C";
+        }
+      });
+    </script>
