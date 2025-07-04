@@ -7,7 +7,7 @@
       .container {
         width: 100%;
         max-width: 845px;
-        margin: 10px;
+        margin: 15px;
       }
 
       .form-container {
@@ -35,7 +35,6 @@
         font-size: 15px;
         font-weight: 700;
         line-height: 24px;
-        margin-bottom: 18px;
       }
 
       .required {
@@ -54,7 +53,7 @@
         color: #ffffff;
         font-size: 14px;
         font-weight: 500;
-        padding: 14.67px 16px;
+        padding: 12.67px 13px;
         outline: none;
         transition: all 0.3s ease;
       }
