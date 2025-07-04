@@ -1,0 +1,638 @@
+      .background-blur {
+        position: fixed;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: #79cbca;
+        opacity: 0.3;
+        filter: blur(100px);
+        top: 10%;
+        right: 5%;
+        z-index: 0;
+        animation: float 6s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+     
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .header-label {
+        font-family: "DM Sans", sans-serif;
+        font-size: clamp(10px, 2.5vw, 12px);
+        font-weight: 700;
+        line-height: 1.4;
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 14px;
+      }
+
+      .header-title {
+        font-family: "Poppins", sans-serif;
+        font-size: clamp(24px, 5vw, 42px);
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        z-index: 1;
+        padding: 20px 0;
+        align-self: stretch;
+      }
+
+      .tabs-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        animation: fadeInUp 0.8s ease-out 0.2s both;
+        width: 100%;
+        max-width: 1280px;
+      }
+
+      .tab-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .tab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 16px;
+        border-radius: 6px;
+        border: 1px solid #b8b8b8;
+        background: transparent;
+        color: rgba(255, 255, 255, 0.5);
+        font-family: "Inter", sans-serif;
+        font-size: clamp(11px, 2.5vw, 14px);
+        font-weight: 400;
+        line-height: 1.5;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        white-space: nowrap;
+        min-height: 44px;
+        position: relative;
+        flex: 1;
+        min-width: 80px;
+        max-width: 150px;
+      }
+
+      .tab.active {
+        border-color: #2ecd59;
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.05) inset;
+        backdrop-filter: blur(5px);
+        color: #ffffff;
+        transform: scale(1.02);
+      }
+
+      .tab:hover {
+        border-color: #2ecd59;
+        background: rgba(255, 255, 255, 0.03);
+        color: rgba(255, 255, 255, 0.8);
+        transform: translateY(-2px);
+      }
+
+      .content-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 1280px;
+        animation: fadeInUp 0.8s ease-out 0.4s both;
+        padding: 20px 0;
+      }
+
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+        max-width: 1200px;
+        justify-items: center;
+      }
+
+      .comparison-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid #b8b8b8;
+        border-radius: 20px;
+        backdrop-filter: blur(5px);
+        box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.05) inset;
+        padding: 20px;
+        width: 100%;
+        max-width: 700px;
+        overflow: hidden;
+      }
+
+      .comparison-table {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .table-header {
+        text-align: center;
+        color: #22a02a;
+        font-family: "Inter", sans-serif;
+        font-size: clamp(12px, 3vw, 16px);
+        font-weight: 500;
+        line-height: 1.4;
+        text-transform: uppercase;
+        padding: 20px 10px;
+        border-bottom: 1px solid #3f3f3f;
+        margin-bottom: 10px;
+      }
+
+      .table-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10px;
+        border-bottom: 1px solid #3f3f3f;
+        transition: all 0.3s ease;
+        min-height: 50px;
+      }
+
+      .table-row:last-child {
+        border-bottom: none;
+      }
+
+      .table-row:hover {
+        background: rgba(255, 255, 255, 0.02);
+        transform: translateX(5px);
+        border-left: 3px solid #2ecd59;
+        padding-left: 17px;
+      }
+
+      .table-label {
+        color: #ccc;
+        font-family: "Inter", sans-serif;
+        font-size: clamp(11px, 2.5vw, 14px);
+        font-weight: 500;
+        line-height: 1.4;
+        flex: 1;
+        text-align: left;
+      }
+
+      .table-value {
+        color: #ffffff;
+        font-family: "Inter", sans-serif;
+        font-size: clamp(12px, 2.8vw, 15px);
+        font-weight: 500;
+        line-height: 1.4;
+        text-align: right;
+        flex-shrink: 0;
+        margin-left: 20px;
+      }
+
+      .pricing-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid #b8b8b8;
+        border-radius: 20px;
+        backdrop-filter: blur(5px);
+        box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.05) inset;
+        padding: 30px 25px;
+        text-align: center;
+        width: 100%;
+        max-width: 450px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        overflow: hidden;
+        animation: fadeInUp 0.8s ease-out 0.6s both;
+      }
+
+      .pricing-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(46, 205, 89, 0.1),
+          transparent
+        );
+        transition: left 0.5s ease;
+      }
+
+      .pricing-card:hover::before {
+        left: 100%;
+      }
+
+      .price {
+        font-family: "Inter", sans-serif;
+        font-size: clamp(32px, 8vw, 48px);
+        font-weight: 700;
+        line-height: 1.2;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        transition: all 0.3s ease;
+      }
+
+      .price-label {
+        font-family: "Inter", sans-serif;
+        font-size: clamp(14px, 3.5vw, 18px);
+        font-weight: 400;
+        line-height: 1.5;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 30px;
+      }
+
+      .cta-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 25px;
+        border-radius: 10px;
+        border: 1px solid #2ecd59;
+        background: linear-gradient(
+          93deg,
+          #26af18 12.78%,
+          rgba(46, 205, 89, 0.24) 133.49%
+        );
+        box-shadow: 0px 1px 35.5px -1px #2ecd59;
+        color: #ffffff;
+        font-size: clamp(16px, 4vw, 20px);
+        font-weight: 500;
+        text-shadow: 0px 0.9px 0.7px #10490a;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        width: 100%;
+        min-height: 50px;
+      }
+
+      .cta-button:hover {
+        transform: translateY(-3px) scale(1.02);
+        box-shadow: 0px 5px 45px -1px #2ecd59;
+        background: linear-gradient(
+          93deg,
+          #2ecd59 12.78%,
+          rgba(46, 205, 89, 0.4) 133.49%
+        );
+        animation: buttonPulse 1.5s infinite;
+      }
+
+      .cta-button:active {
+        transform: translateY(-1px) scale(1.01);
+      }
+
+      @keyframes buttonPulse {
+        0%, 100% {
+          box-shadow: 0px 1px 35.5px -1px #2ecd59;
+        }
+        50% {
+          box-shadow: 0px 1px 45px -1px #2ecd59, 0px 0px 20px rgba(46, 205, 89, 0.3);
+        }
+      }
+
+      .shake-animation {
+        animation: shake 0.5s ease-in-out;
+      }
+
+      @keyframes shake {
+        0%, 100% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-5px);
+        }
+        75% {
+          transform: translateX(5px);
+        }
+      }
+
+      .trust-section {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid #b8b8b8;
+        border-radius: 14px;
+        backdrop-filter: blur(5px);
+        box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.05) inset;
+        padding: 20px;
+        text-align: center;
+        animation: fadeInUp 0.8s ease-out 0.8s both;
+      }
+
+      .trust-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .trust-stars {
+        display: flex;
+        gap: 2px;
+      }
+
+      .star {
+        width: 16px;
+        height: 16px;
+        background: #00b67a;
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
+      }
+
+      .trust-text {
+        color: #ffffff;
+        font-size: clamp(11px, 2.5vw, 13px);
+        font-weight: 400;
+      }
+
+      .payment-methods {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      .payment-icon {
+        width: 50px;
+        height: 30px;
+        background: #141414;
+        border: 1px solid #3d3d3d;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        flex-shrink: 0;
+      }
+
+      .payment-icon:hover {
+        transform: translateY(-2px);
+        border-color: #2ecd59;
+        background: rgba(46, 205, 89, 0.1);
+      }
+
+      .loading-spinner {
+        display: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #ffffff;
+        border-top: 2px solid transparent;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin-left: 10px;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .pulse-animation {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.8;
+        }
+      }
+
+      .slide-in {
+        animation: slideIn 0.5s ease-out;
+      }
+
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .amount-highlight {
+        color: #2ecd59;
+        font-weight: 700;
+      }
+
+      /* Responsive Design */
+      @media (min-width: 640px) {
+        .container {
+          padding: 60px 24px;
+          gap: 40px;
+        }
+
+        .background-blur {
+          width: 400px;
+          height: 400px;
+          top: 15%;
+          right: 8%;
+        }
+
+        .header {
+          text-align: left;
+          align-self: flex-start;
+          margin-bottom: 30px;
+        }
+
+        .tab {
+          flex: none;
+          min-width: 100px;
+        }
+
+        .comparison-card {
+          padding: 25px;
+        }
+
+        .pricing-card {
+          padding: 35px 30px;
+        }
+
+        .trust-content {
+          flex-wrap: nowrap;
+        }
+
+        .payment-icon {
+          width: 55px;
+          height: 32px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .background-blur {
+          width: 440px;
+          height: 440px;
+          top: 20%;
+          right: 10%;
+        }
+
+        .tab-row {
+          flex-wrap: nowrap;
+          max-width: 800px;
+        }
+
+        .content-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 30px;
+          align-items: start;
+        }
+
+        .comparison-card {
+          padding: 30px;
+        }
+
+        .pricing-card {
+          padding: 40px 35px;
+        }
+
+        .payment-icon {
+          width: 60px;
+          height: 35px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .container {
+          padding: 80px 0px;
+        }
+
+        .header {
+          padding: 0 64px;
+        }
+
+        .content-grid {
+          gap: 40px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 30px 12px;
+          gap: 25px;
+        }
+
+        .background-blur {
+          width: 250px;
+          height: 250px;
+          opacity: 0.2;
+        }
+
+        .tab {
+          padding: 10px 12px;
+          min-height: 40px;
+          font-size: 11px;
+          min-width: 70px;
+        }
+
+        .table-row {
+          padding: 12px 8px;
+          min-height: 45px;
+        }
+
+        .table-row:hover {
+          padding-left: 15px;
+        }
+
+        .table-label {
+          font-size: 11px;
+        }
+
+        .table-value {
+          font-size: 12px;
+          margin-left: 15px;
+        }
+
+        .pricing-card {
+          padding: 25px 20px;
+        }
+
+        .trust-section {
+          padding: 15px;
+        }
+
+        .payment-methods {
+          gap: 6px;
+        }
+
+        .payment-icon {
+          width: 45px;
+          height: 28px;
+        }
+
+        .star {
+          width: 14px;
+          height: 14px;
+        }
+      }
+
+      /* Dark mode enhancements for better contrast */
+      @media (prefers-contrast: high) {
+        .table-label {
+          color: #ffffff;
+        }
+        
+        .tab {
+          border-color: #ffffff;
+        }
+        
+        .comparison-card,
+        .pricing-card,
+        .trust-section {
+          border-color: #ffffff;
+        }
+      }
