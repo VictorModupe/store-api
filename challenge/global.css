@@ -506,7 +506,7 @@ ul {
     color: var(--color-text-light);
 }
 .price-nav img { cursor: pointer; }
-.cta-button { width: 100%; }
+.cta-button { width: 110%; }
 .trustpilot-widget {
     display: flex;
     align-items: center;
