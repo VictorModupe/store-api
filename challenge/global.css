@@ -13,20 +13,11 @@
     --color-border-dark: #3f3f3f;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', 'DM Sans', sans-serif;
-    background-color: var(--color-background);
-    color: var(--color-text-light);
-    overflow-x: hidden;
-}
-
 .container {
     width: 100%;
     max-width: 1265px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20px;   
     box-sizing: border-box;
 }
 
