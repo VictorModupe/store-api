@@ -217,7 +217,7 @@ ul {
 
 /* CSS for section section:story */
 .story-section {
-    background-color: #2a2a2a;
+    background-color: var(--color-background-dark);
     padding: 80px 0;
 }
 .story-header {
