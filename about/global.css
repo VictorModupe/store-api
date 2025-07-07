@@ -4,20 +4,10 @@
     --color-text-dark: #011624;
     --color-text-muted: #67737c;
     --color-text-muted-light: rgba(255, 255, 255, 0.75);
-    --color-background-dark: #000000;
+    --color-background-dark: #072604;
     --color-background-light: #f7f8f8;
     --color-background-white: #ffffff;
 }
-
-body {
-    margin: 0;
-    font-family: 'DM Sans', sans-serif;
-    background-color: var(--color-background-dark);
-    color: var(--color-text-light);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 .container {
     width: 100%;
     max-width: 1264px;
@@ -26,6 +16,7 @@ body {
     padding-left: 24px;
     padding-right: 24px;
     box-sizing: border-box;
+    padding: 10px;
 }
 
 section {
@@ -75,44 +66,6 @@ ul {
     }
 }
 
-
-
-
-
-
-.site-header {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    position: absolute;
-    width: 100%;
-    z-index: 100;
-    box-sizing: border-box;
-}
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo img {
-    width: 42px;
-    height: auto;
-    display: block;
-}
-.main-nav ul {
-    display: flex;
-    gap: 22px;
-}
-.main-nav a {
-    font-family: 'Inter', sans-serif;
-    font-size: 19px;
-    color: var(--color-text-light);
-}
-.mobile-nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
 @media (max-width: 1024px) {
     .main-nav, .login-btn {
         display: none;
@@ -217,7 +170,7 @@ ul {
 /* CSS for section section:story */
 .story-section {
     background-color: var(--color-background-dark);
-    padding: 80px 0;
+    padding: 30px 30px ;
 }
 .story-header {
     margin-bottom: 50px;
@@ -238,6 +191,7 @@ ul {
     letter-spacing: -1.1px;
     max-width: 1040px;
     margin-bottom: 15px;
+    color: #ffffff;
 }
 .story-description {
     font-family: 'DM Sans', sans-serif;
@@ -267,6 +221,7 @@ ul {
     font-weight: 700;
     font-size: 23px;
     line-height: 1.1;
+    color: #ffffff;
 }
 .story-card p {
     font-family: 'Space Grotesk', sans-serif;
@@ -469,9 +424,11 @@ ul {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 37px;
+    font-color: black;
     line-height: 1.2;
     letter-spacing: -1.1px;
     margin-bottom: 15px;
+    font-color: black;
 }
 .faq-description {
     font-family: 'DM Sans', sans-serif;
