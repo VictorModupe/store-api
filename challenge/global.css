@@ -297,7 +297,7 @@ ul {
 }
 
 .feature-card-intro {
-    grid-column: span 3;
+    grid-column: span 1;
 }
 
 .feature-card-intro h3 {
