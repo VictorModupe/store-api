@@ -10,6 +10,8 @@
         width: 100%;
         max-width: 845px;
         margin: 20px;
+        align-items: center;
+        justify-content: center;
       }
 
       .form-container {
