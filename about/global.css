@@ -92,6 +92,10 @@ ul {
     align-items: center;
     min-height: 588px;
     box-sizing: border-box;
+    background-image: url('https://cdn.shopify.com/s/files/1/0837/1935/6697/files/Section_5.png?v=1752604369');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .hero-bg-blur {
     position: absolute;
@@ -100,12 +104,6 @@ ul {
     width: 1024px;
     height: 960px;
     background: linear-gradient(180deg, #10490a 0%, #10490a 100%);
-    background-image: url('https://cdn.shopify.com/s/files/1/0837/1935/6697/files/Section_5.png?v=1752604369');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(300px);
-    opacity: 0.5;
 
     filter: blur(200px);
     opacity: 2;
