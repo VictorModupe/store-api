@@ -9,7 +9,7 @@
 .custom-hero-bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, #e0e0e0, transparent);
+  background-image: url("https://cdn.shopify.com/s/files/1/0837/1935/6697/files/Section_6afa219c-07e0-461f-82f1-0c85f77ec960.png?v=1752771616")
   z-index: 0;
 }
 
