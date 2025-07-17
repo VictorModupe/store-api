@@ -149,6 +149,7 @@ ul {
     flex-direction: column;
     align-items: center;
     gap: 34px;
+    font-size: 20px;
 }
 
 .prop-challenge-badge {
