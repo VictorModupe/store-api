@@ -8,6 +8,12 @@
     --color-background-light: #f7f8f8;
     --color-background-white: #ffffff;
 }
+.help{
+    background-image: url('https://cdn.shopify.com/s/files/1/0837/1935/6697/files/Section_5.png?v=1752604369');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .container {
     width: 100%;
     max-width: 1264px;
