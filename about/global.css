@@ -101,7 +101,7 @@ ul {
     height: 960px;
     background: linear-gradient(180deg, #10490a 0%, #10490a 100%);
     filter: blur(200px);
-    opacity: 0.9;
+    opacity: 2;
     transform: translateX(-50%) rotate(35deg);
     z-index: 0;
 }
