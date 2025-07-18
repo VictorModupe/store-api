@@ -85,6 +85,8 @@ ul {
 
 /* CSS for section section:hero */
 .hero-section {
+    position: relative;
+    overflow: hidden;
     background-color: var(--color-background-dark);
     padding: 160px 0 100px;
     text-align: center;
@@ -92,23 +94,37 @@ ul {
     align-items: center;
     min-height: 588px;
     box-sizing: border-box;
-    
+    z-index: 1;
 }
+
 .hero-bg-blur {
     position: absolute;
-    top: -40px;
-    left: 50%;
-    width: 1024px;
-    height: 960px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('https://cdn.shopify.com/s/files/1/0837/1935/6697/files/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept_1.jpg?v=1752718944');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(200px);
+    filter: blur(80px);
     opacity: 2;
-    transform: translateX(-50%) rotate(35deg);
     z-index: 0;
 }
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('https://cdn.shopify.com/s/files/1/0837/1935/6697/files/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept_1.jpg?v=1752718944');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(12px);
+    opacity: 2;
+    z-index: 0;
+}
+
+
 .hero-container {
     position: relative;
     z-index: 1;
