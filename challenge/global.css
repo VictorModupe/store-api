@@ -78,6 +78,7 @@ ul {
 
 .hero-section {
     background-image: url('https://cdn.shopify.com/s/files/1/0837/1935/6697/files/futuristic-finance-digital-market-graph-user-interface-with-diagram-technology-hud-graphic-concept_1.jpg?v=1752718944');
+    background: linear-gradient(132deg, #26af18 20.11%, rgba(46, 205, 89, 0.24) 183.16%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
