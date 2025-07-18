@@ -89,6 +89,7 @@ ul {
     text-align: center;
     min-height: 691px;
     box-sizing: border-box;
+    opacity: 0.3;
 }
 
 .hero-bg-blur {
