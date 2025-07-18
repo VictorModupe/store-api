@@ -307,6 +307,7 @@ ul {
     color: var(--color-text-light);
     border-radius: 60px;
     padding: 2px 15px;
+    padding-top: 30px;
 }
 
 .feature-card {
