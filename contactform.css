@@ -52,7 +52,7 @@
       .form-group input,
       .form-group textarea {
         width: 100%;
-        background-color: #072604;
+        background-color: #ffffff;
         border: 1px solid #10490a;
         border-radius: 8px;
         color: #ffffff;
@@ -203,8 +203,10 @@
         }
         
         .form-row {
-          margin-bottom: 40px;
-          align-items: center;
+          display: flex;
+          flex-direction: column;
+          gap: 20px; /* Increase spacing between elements */
+          margin-bottom: 30px; /* Reduce if spacing is too much */
         }
         
         .submit-btn {
