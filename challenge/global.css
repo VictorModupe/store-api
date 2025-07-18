@@ -99,9 +99,9 @@ ul {
     height: 100%;
     top: 0;
     left: 0;
-    filter: blur(12px);
-    opacity: 0.1;
-    z-index: 1;
+    filter: blur(400px);
+    opacity: 0.4;
+    z-index: 4;
 }
 
 
