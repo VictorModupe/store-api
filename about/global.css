@@ -106,7 +106,7 @@ ul {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(8px);
+    filter: blur(3px);
     background: linear-gradient(159deg, #10490A 0%, rgba(38, 175, 24, 0) 129.81%);
     opacity: 2;
     z-index: 0;
