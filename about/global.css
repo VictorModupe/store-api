@@ -50,7 +50,7 @@ ul {
     font-size: 20px;
     line-height: 32px;
     color: var(--color-text-light);
-    background: linear-gradient(132deg, #26af18 20.11%, rgba(46, 205, 89, 0.24) 183.16%);
+    background: linear-gradient(159deg, #10490a 0%, rgba(38, 175, 24, 0) 129.81%);
     box-shadow: 0px 1px 35.5px -1px #2ecd59;
     transition: transform 0.3s ease;
 }
