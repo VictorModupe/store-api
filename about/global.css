@@ -107,7 +107,7 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     filter: blur(3px);
-    background: linear-gradient(159deg, #10490a 0%, #26AF18 30%, #2ECD59 100%);  
+    background: linear-gradient(135deg, #10490a 0%, #1f7d12 20%, #26AF18 50%, #2ECD59 80%, #a6f7c3 100%);  
     opacity: 2;
     z-index: 0;
 }
