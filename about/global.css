@@ -107,7 +107,8 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     filter: blur(3px);
-    background: linear-gradient(159deg, #10490a 0%, rgba(38, 175, 24, 0) 129.81%);    opacity: 2;
+    background-color: var(--color-background-dark);    
+    opacity: 2;
     z-index: 0;
 }
 
