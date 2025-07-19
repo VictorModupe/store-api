@@ -108,7 +108,7 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     filter: blur(0.5px);
-    opacity: 3;
+    opacity: 0.2;
     z-index: 0.5;
 }
 
